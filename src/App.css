@@ -1,0 +1,153 @@
+/* app.css */
+
+.App {
+  text-align: center;
+}
+
+.dark-mode {
+  /* background-color:#4C4C6D; */
+  /* background-color:#913175; */
+  background:linear-gradient(#3c2e78,#0cdbbf,#00215E);
+  
+  color: #0b0b0bc6;
+}
+
+.light-mode {
+  background-color: #ecf0f1;
+  color: black;
+}
+
+.navbar {
+  height: 50px;
+  /* background-color: #333; */
+  background-color:midnightblue;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(109, 69, 5);
+   /* background-color:rgb(232, 228, 28); */
+   background:linear-gradient(#7fae08,#dfe61d,#e6c80a);
+   border-radius:8%;
+}
+
+
+.nav-menu {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.nav-menu a:last-child {
+  margin-right: 0;
+}
+
+.theme-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.cipher-container {
+  width: 100%;
+  margin: 20px auto;
+  height: 700px;
+  
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.info-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.info-container {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 10px;
+  background:linear-gradient(rgb(225, 57, 225),rgb(0, 255, 251),#7660e5,#c3acbf,#6b10e1);
+  height:50%;
+  color:#141601;
+  font-size:22px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.custom-input,
+.custom-output {
+  width: 100%;
+  height: 230px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.copy-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.convert-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.encrypt-button:hover,
+.convert-button:hover,
+.copy-button:hover,
+.info-button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (min-width: 768px) {
+  .input-output-container {
+    flex-direction: row;
+  }
+
+  .custom-input,
+  .custom-output {
+    width: 300px;
+  }
+}
